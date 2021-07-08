@@ -3,7 +3,7 @@ video {
   width: 100vw;
   height: 100vh;
   z-index: 0;
-  position: absolute;
+  //position: absolute;
   top: 0;
   left: 0;
 }
@@ -13,7 +13,7 @@ video:hover .Player-back {
 }
 
 .Player-back {
-  //position: fixed;
+  position: fixed;
   top: 5px;
   left: 5px;
   font-size: 12px;

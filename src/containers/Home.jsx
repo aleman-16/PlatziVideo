@@ -6,6 +6,7 @@
 /* eslint-disable react/jsx-wrap-multilines */
 import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
+import Header from '../components/Header';
 import Search from '../components/Search';
 import Categories from '../components/Categories';
 import Carousel from '../components/Carousel';
@@ -23,7 +24,8 @@ const Home = ({ mylist, trends, originals }) => {
   return (
     /*Browser fragment*/
     <>
-      <Search />
+      <Header />
+      <Search isHome />
       {mylist.length > 0 &&
         <Categories title='Mi Lista'>
           <Carousel>
